@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Melissa</title>
+    <!--Style-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--inicio cabeçalho-->
+    <div class="container_navbar">
+        <nav id="inicio" class="navbar center">
+            <a class="navbar_item" href="#inicio">INICIO</a>
+            <a class="navbar_item" href="#aprecentacao">APRESENTAÇÃO</a>
+            <a class="navbar_item" href="#formacao">FORMAÇÃO</a>
+            <a class="navbar_item" href="#projetos">PROJETOS</a>
+            <a class="navbar_item" href="#contato">CONTATO</a>
+        </nav>
+    </div>
+
+    <div class="container_header">
+        <header class="header center">
+            <figure class="header_image">
+                <img class="header_image--picture" src="./img/melissa.jpg" alt="Melissa" />
+            </figure>
+            <div id="aprecentacao" class="header_aprecentacao">
+                <h1 class="header_aprecentacao--titulo">Melissa Mendoza</h1>
+                <h2 class="header_aprecentacao--subtitulo">
+                    <i> Estudante Desenvolvimento Full-stack </i>
+                </h2>
+                <p class="header_aprecetacao--description">
+                    Sou de nacionalidade venezuelana, tenho 27 anos e moro recentemente no Brasil-Rio de Janeiro.
+                    Através do curso profissional de TI que fiz com a Toti Diversidade, descobri minha paixão pela
+                    programação, me formei como desenvolvedor back-end, depois fiz o curso profissional de front-end
+                    através da plataforma Eidos (Codigo Pa'lante) e me formei nessa área esse ano 2023. Atualmente
+                    faço um curso profissional de desenvolvimento Full-stack com a
+                    <a href="https://totidiversidade.com.br/"><strong>Toti Diversidade</strong></a>
+                    onde estou aprendendo Git, GitHub, HTML, CSS, Javascript, React, Bootstrap, SQLlite, API REST e Node
+                    JS.
+                </p>
+            </div>
+        </header>
+    </div>
+    <!--fim do cabeçalho-->
+
+    <!--seção de formação-->
+    <div class="container_formacao">
+        <section id="formacao" class="formacao center">
+            <h2 class="title">Formação</h2>
+            <ul>
+                <li class="item">
+                    <small>Agosto 2023 - Atualmente</small>
+                    <h3>Curso profissional desenvolvimento full-stack</h3>
+                    <p>Toti Diversidade</p>
+                </li>
+                <li class="item">
+                    <small>Abril 2023 - Agosto 2023</small>
+                    <h3>Curso profissional desenvolvimento front-end</h3>
+                    <p>Eidos (Codigo Pa'lante)</p>
+                </li>
+
+                <li class="item">
+                    <small>Maio 2022 - Setembro 2022</small>
+                    <h3>Curso profissional desenvolvimento back-end</h3>
+                    <p>Toti Diversidade</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <!--fim da seção de formação-->
+
+    <!--seção de projetos-->
+    <div id="projetos" class="container_projetos">
+        <div id="projetos" class="center">
+            <h2 class="title">Projetos</h2>
+            <div id="cards" class="row">
+
+            </div>
+        </div>
+    </div>
+    <!--fim da seção de projetos-->
+
+    <!--Footer-->
+    <div class="container_footer">
+        <footer id="contato" class="contato center">
+            <h2 class="title light">Contato</h2>
+            <!--fim do footer-->
+
+            <!--Forms-->
+            <form action="/" method="post" id="formulario" name="formulario">
+                <div class="form_item">
+                    <label class="form_item--label" for="nome">NOME:</label>
+                    <input type="text" id="nome" class="form_item--input" name="nome"
+                        placeholder="Insira seu nome." /><br />
+                </div>
+
+                <div class="form_item">
+                    <label class="form_item--label" for="email">EMAIL:</label>
+                    <input type="email" id="email" class="form_item--input" name="email"
+                        placeholder="Insira seu email" /><br />
+                </div>
+                <div class="form_item">
+                    <label class="form_item--label" for="assunto">ASSUNTO:</label>
+                    <input type="text" id="assunto" class="form_item--input" name="assunto"
+                        placeholder="Insira o asunto" />
+                </div>
+
+                <div class="form_item">
+                    <label class="form_item--label" for="message">MENSSAGEM: </label>
+                    <textarea class="form_item--input" name="menssagem" id="menssagem" cols="25"
+                        placeholder="Escreva sua mensagem aqui"></textarea>
+                    <input class="form_item--btn" type="submit" value="ENVIAR" />
+                </div>
+            </form>
+            <!--fim do form-->
+
+            <!--social media-->
+            <section class="social-media">
+                <div class="form_link">
+                    <a href="https://www.facebook.com/melissamendoza2120" class="fab fa-facebook-f"></a>
+                    <a href="https://github.com/Melsanz" class="fab fa-github"></a>
+                    <a href="https://www.instagram.com/melsanz2004/" class="fab fa-instagram"></a>
+                    <a href="https://www.linkedin.com/in/melissamendoza0320/" class="fab fa-linkedin"></a>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Scripts-->
+    <script src="./javascript/script.js"></script>
+</body>
+
+</html>
